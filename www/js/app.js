@@ -2333,7 +2333,7 @@ function displayBooking(data,div_id)
 	             //html+='<ons-icon class="icon '+icon.classname+'" icon="'+icon.icons+'"></ons-icon>';
 	             html+=' '+val.status;
 	             if ( val.viewed==1){
-	                html+= '&nbsp;<span class="new-tags">'+ getTrans('new','new') +'</span>'
+	                html+= ' <span class="new-tags">'+ getTrans('new','new') +'</span>'
 	             }
 	             html+='</p>';
              html+='</ons-col>';      
@@ -2443,7 +2443,7 @@ function displayBookingDetails(data)
 	var html='<ons-list-header class="header">';
         html+='<ons-row>';        
         //html+='<ons-icon class="icon '+icon.classname+'" icon="'+icon.icons+'"></ons-icon>';
-        //html+='&nbsp;&nbsp;'+data.status
+        //html+='  '+data.status
         html+='<span class="status margin2 '+data.status_raw+' ">'+data.status+'</span>';
         html+='</ons-row>';
      html+='</ons-list-header>';
@@ -3173,4 +3173,12 @@ function clearBadge()
 {
 	removeStorage("badge_count");
 	$(".notification-count").hide();
+}
+function showPoints()
+{
+	if (isLogin()){
+		menu.setMainPage('points.html', {closeMenu: true});
+	} else {
+		menu.setMainPage('points.html', {closeMenu: true})
+	}
 }
