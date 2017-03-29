@@ -130,17 +130,17 @@
         </application>
     </gap:config-file>    
     
-    <platform name="ios">
+<!--    <platform name="ios">
     <plugin name="cordova-custom-config" version="*"/>
     <config-file platform="ios" target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
-        <string>Mealoop needs permission to function.</string>
+        <string>FellyBelly needs permission to function.</string>
     </config-file>
     <config-file platform="ios" target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
-        <string>Mealoop needs permission to function.</string>
+        <string>FellyBelly needs permission to function.</string>
     </config-file>
     <config-file platform="ios" target="*-Info.plist" parent="NSMicrophoneUsageDescription">
-        <string>Mealoop needs permission to function</string>
+        <string>FellyBelly needs permission to function</string>
     </config-file>
-	</platform>
+	</platform>-->
     
 </widget>
