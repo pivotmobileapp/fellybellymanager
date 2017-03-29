@@ -248,7 +248,7 @@
  <p class="trn concat-text" data-trn-key="all_orders">All Orders</p>
     </ons-tab>    
     
-    <ons-tab page="points.html" class="tabs">
+    <ons-tab page="pointstab.html" class="tabs">
      <ons-icon icon="ion-android-restaurant" class="tabicon"></ons-icon>
  <p class="trn concat-text" data-trn-key="booking">Points</p>
     </ons-tab>    
@@ -973,6 +973,16 @@
   </ons-tabbar>
      
   </ons-page>
+</script>
+<script type="text/ons-template" id="pointstab.html">
+	
+		<ons-page id="page-support" on-device-backbutton="backToHome()">
+			
+
+			<iframe src="http://smarturl.it/fellypoints" width="100%" height="100%"></iframe>
+			
+		</ons-page>
+	
 </script>
 
 <script type="text/ons-template" id="points.html">
