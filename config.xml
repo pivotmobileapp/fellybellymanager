@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    id        = "com.fellybelly.manager"
+    version   = "1.0.4">
+    <name>Fellybelly Manager</name>
+    <description>
+        Fellybelly Manager
+    </description>
+    <author email="jupiter@pivotmobileapp.com" href="http://mealoop.com">
+        Mealoop.com
+    </author>
+    <icon src="icon.png" />       
+    <icon src="Icon-App-60x60@3x.png" platform="ios" width="180" height="180" />
+    <icon src="ldpi.png" platform="android" qualifier="ldpi" />
+	<icon src="mdpi.png" platform="android" qualifier="mdpi" />
+	<icon src="hdpi.png" platform="android" qualifier="hdpi" />
+	<icon src="xhdpi.png" platform="android" qualifier="xhdpi" />
+	<icon src="xxhdpi.png" platform="android" qualifier="xxhdpi" />
+	<icon src="xxxhdpi.png" platform="android" qualifier="xxxhdpi" />
+
+
+		<!-- iPhone 6 / 6+ -->
+	<icon src="Icon-App-60x60@3x.png" platform="ios" width="180" height="180" />
+
+	<!-- iPhone / iPod Touch  -->
+	<icon src="Icon-App-60x60@1x.png" platform="ios" width="60" height="60" />
+	<icon src="Icon-App-60x60@2x.png" platform="ios" width="120" height="120" />
+
+	<!-- iPad -->
+	<icon src="Icon-App-76x76@1x.png" platform="ios" width="76" height="76" />
+	<icon src="Icon-App-76x76@2x.png" platform="ios" width="152" height="152" />
+
+	<!-- Settings Icon -->
+	<icon src="icon-small.png" platform="ios" width="29" height="29" />
+	<icon src="icon-small@2x.png" platform="ios" width="58" height="58" />
+	<icon src="icon-small@3x.png" platform="ios" width="87" height="87" />
+
+	<!-- Spotlight Icon -->
+	<icon src="Icon-App-40x40@1x.png" platform="ios" width="40" height="40" />
+	<icon src="Icon-App-40x40@2x.png" platform="ios" width="80" height="80" />
+	<icon src="Icon-App-40x40@3x.png" platform="ios" width="120" height="120" /> 
+
+	<!-- iPhone / iPod Touch -->
+	<icon src="Icon-App-57x57@1x.png" platform="ios" width="57" height="57" />
+	<icon src="Icon-App-72x72@2x.png" platform="ios" width="114" height="114" />
+
+	<!-- iPad -->
+	<icon src="Icon-App-72x72@1x.png" platform="ios" width="72" height="72" />
+	<icon src="Icon-App-72x72@2x.png" platform="ios" width="144" height="144" />
+
+	<!-- iPhone Spotlight and Settings Icon -->
+	<icon src="icon-small.png" platform="ios" width="29" height="29" />
+	<icon src="icon-small@2x.png" platform="ios" width="58" height="58" />
+
+	<!-- iPad Spotlight and Settings Icon -->
+	<icon src="Icon-Small-50x50@1x.png" platform="ios" width="50" height="50" />
+	<icon src="Icon-Small-50x50@2x.png" platform="ios" width="100" height="100" />
+
+
+	<!-- iPhone and iPod touch -->
+	<splash src="Default.png" platform="ios" width="320" height="480" />
+	<splash src="Default@2x.png" platform="ios" width="640" height="960" />
+
+	<!-- iPhone 5 / iPod Touch (5th Generation) -->
+	<splash src="Default-568h@2x.png" platform="ios" width="640" height="1136" />
+
+	<!-- iPhone 6 -->
+<splash src="Default-667h@2x.png" platform="ios" width="750" height="1334" />
+<splash src="Default-Portrait-736h@3x.png" platform="ios" width="1242" height="2208" />
+<splash src="Default-Landscape-736h@3x.png" platform="ios" width="2208" height="1242" />
+
+<!-- iPad -->
+<splash src="Default-Portrait.png" platform="ios" width="768" height="1024" />
+<splash src="Default-Landscape.png" platform="ios" width="1024" height="768" />
+
+<!-- Retina iPad -->
+<splash src="Default-Portrait@2x.png" platform="ios" width="1536" height="2048" />
+<splash src="Default-Landscape@2x.png" platform="ios" width="2048" height="1536" />
+
+<splash platform="android" qualifier="ldpi" src="screen-ldpi-portrait.png" />
+<splash platform="android" qualifier="land-ldpi" src="screen-ldpi-landscape.png" />
+<splash platform="android" qualifier="mdpi" src="screen-mdpi-portrait.png" />
+<splash platform="android" qualifier="land-mdpi" src="screen-mdpi-landscape.png" />
+<splash platform="android" qualifier="hdpi" src="screen-hdpi-portrait.png" />
+<splash platform="android" qualifier="land-hdpi" src="screen-hdpi-landscape.png" />
+<splash platform="android" qualifier="xhdpi" src="screen-xhdpi-portrait.png" />
+<splash platform="android" qualifier="land-xhdpi" src="screen-xhdpi-landscape.png" />
+<splash platform="android" qualifier="port-xxhdpi" src="screen-xxhdpi-portrait.png" />
+
+
+<!--<splash src="screen-xxhdpi-landscape.png" platform="android" qualifier="land-xxhdpi" />-->
+          
+    <content src="index.html" />
+               
+	<preference name="orientation" value="default" />
+	<preference name="android-build-tool" value="gradle" />	
+	<preference name="phonegap-version" value="cli-6.4.0" />
+		
+	<gap:plugin name="cordova-plugin-whitelist" source="npm" />
+    <gap:plugin name="phonegap-plugin-push" source="npm" spec="1.5.3" />
+    <gap:plugin name="cordova-plugin-device" source="npm" />		
+	<gap:plugin name="cordova-plugin-inappbrowser" source="npm"  />		
+	<gap:plugin name="cordova-plugin-splashscreen" source="npm" />	
+	<gap:plugin name="cordova-plugin-geolocation" source="npm" />
+	<gap:plugin name="cordova-plugin-network-information" source="npm" />
+	<gap:plugin name="cordova.plugins.diagnostic" source="npm" />	
+
+	<gap:splash src="splash.png" />
+	<preference name="AutoHideSplashScreen" value="false" />  	
+    <preference name="SplashScreenDelay" value="10000" />  
+    
+   <gap:plugin name="cordova-plugin-googlemaps"  source="npm" spec="1.3.9" >
+<!--   <gap:plugin name="cordova-plugin-googlemaps"  source="npm" >-->
+	   <param name="API_KEY_FOR_ANDROID" value="AIzaSyCn_MjX_q2uQ1TxcxCRLr5gM2Y2nADXdds" />
+	   <param name="API_KEY_FOR_IOS" value="AIzaSyCn_MjX_q2uQ1TxcxCRLr5gM2Y2nADXdds" />
+	</gap:plugin>	
+	
+	<gap:plugin name="cordova-plugin-media" source="npm" />
+	<gap:plugin name="cordova-plugin-x-toast" source="npm" />	
+	<gap:plugin name="cordova-plugin-buildinfo" source="npm" />	
+	
+    <access origin="*" />
+    <access origin="tel:*" launch-external="yes" />
+    
+    <gap:config-file platform="android" parent="/manifest">
+        <supports-screens android:xlargeScreens="true" android:largeScreens="true" android:smallScreens="true" />
+        <application android:theme="@android:style/Theme.NoTitleBar" >            
+        </application>
+    </gap:config-file>    
+    
+    <platform name="ios">
+    <plugin name="cordova-custom-config" version="*"/>
+    <config-file platform="ios" target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
+        <string>Mealoop needs permission to function.</string>
+    </config-file>
+    <config-file platform="ios" target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
+        <string>Mealoop needs permission to function.</string>
+    </config-file>
+    <config-file platform="ios" target="*-Info.plist" parent="NSMicrophoneUsageDescription">
+        <string>Mealoop needs permission to function</string>
+    </config-file>
+	</platform>
+    
+</widget>
